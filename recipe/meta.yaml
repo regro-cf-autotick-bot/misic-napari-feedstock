@@ -1,5 +1,5 @@
 {% set name = "misic-napari" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/misic-napari-{{ version }}.tar.gz
-  sha256: c61f0778a97af2dba041918268d68349cc000cfc1634ea246f4f1ea9b7eda0c8
+  sha256: 622283bfbcdd1c64396b61224a3d35e31c73839b04de5a71caf0d1815ca6e136
 
 build:
   noarch: python
@@ -20,11 +20,14 @@ requirements:
     - python >=3.6
     - setuptools-scm
   run:
+    - magicgui
     - napari
     - napari-plugin-engine
+    - numpy
     - python >=3.6
     - tensorflow >=2
     - scikit-image
+    - scipy
 
 test:
   imports:
