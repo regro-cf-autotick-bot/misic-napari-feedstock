@@ -1,5 +1,5 @@
 {% set name = "misic-napari" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/misic-napari-{{ version }}.tar.gz
-  sha256: 622283bfbcdd1c64396b61224a3d35e31c73839b04de5a71caf0d1815ca6e136
+  sha256: 1863713041dfe21f9a1b43a94af1cfc685ac4fab7ac88356f57376e0e4a8e158
 
 build:
   noarch: python
